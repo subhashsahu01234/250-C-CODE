@@ -2,7 +2,7 @@
 
 ## 1. Simple C Questions
 
-- [ ] Area_and_Circumference_of_a_Circle.c
+- [X] Area_and_Circumference_of_a_Circle.c
 - [ ] Area_of_Triangle.c
 - [ ] Convert_a_Persons_Name_into_an_Abbreviated.c
 - [ ] Simple_Interest.c

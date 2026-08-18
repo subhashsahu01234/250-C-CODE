@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
 """
 sync_progress.py
 ================
+
 Automated Workflow for C Challenge Repository:
   1. Scans workspace for solved .c challenge files (verifies content & sanity).
   2. Updates `250_C_QUESTIONS.md` (ticks [X] / unticks [ ]).

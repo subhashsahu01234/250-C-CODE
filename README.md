@@ -9,12 +9,12 @@ A curated, comprehensive roadmap of 250+ fundamental and advanced C programming 
 | Metric | Status |
 | :--- | :--- |
 | **Total Challenges** | `234` |
-| **Completed** | `0` |
-| **Pending** | `234` |
-| **Current Completion Rate** | `0.00%` |
+| **Completed** | `1` |
+| **Pending** | `233` |
+| **Current Completion Rate** | `0.43%` |
 
 ```text
-Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0.00% (0 / 234)
+Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0.43% (1 / 234)
 ```
 
 ---
@@ -31,7 +31,7 @@ Progress: [░░░░░░░░░░░░░░░░░░░░░░░
 
 | # | Topic / Folder | Status | Solved / Total |
 | :-: | :--- | :-: | :-: |
-| 01 | [`01_Simple_C_Questions`](./01_Simple_C_Questions/) | ⭕ Not Started | 0 / 12 |
+| 01 | [`01_Simple_C_Questions`](./01_Simple_C_Questions/) | ⏳ In Progress | 1 / 12 |
 | 02 | [`02_If_Else_Statement`](./02_If_Else_Statement/) | ⭕ Not Started | 0 / 28 |
 | 03 | [`03_Loops`](./03_Loops/) (`While_Loop`, `Do_While_Loop`, `For_Loop`) | ⭕ Not Started | 0 / 17 |
 | 04 | [`04_Switch_Case`](./04_Switch_Case/) | ⭕ Not Started | 0 / 12 |

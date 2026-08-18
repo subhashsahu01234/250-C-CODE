@@ -15,11 +15,9 @@
 
 ## 📂 Active Review Schedule
 
-*No problems completed yet. When you solve a challenge in any topic folder, add it here to begin the spaced repetition review cycle.*
-
 | Problem Name | Section | Last Reviewed | Next Review | Interval | Status / Notes |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| *(None yet)* | — | — | — | — | Solve your first problem to start! |
+| Area and Circumference of a Circle | 01_Simple_C_Questions | 2026-08-18 | 2026-08-19 | 1 Day | Initial solution completed |
 
 ---
 
@@ -27,7 +25,7 @@
 
 | Topic / Section | Total Problems | Solved | Status |
 | :--- | :---: | :---: | :--- |
-| `01_Simple_C_Questions` | 12 | 0 | ⭕ Not Started |
+| `01_Simple_C_Questions` | 12 | 1 | ⏳ In Progress |
 | `02_If_Else_Statement` | 28 | 0 | ⭕ Not Started |
 | `03_Loops` | 15 | 0 | ⭕ Not Started |
 | `04_Switch_Case` | 12 | 0 | ⭕ Not Started |
