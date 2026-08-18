@@ -3,7 +3,7 @@
 sync_progress.py
 ================
 Automated Workflow for C Challenge Repository:
-  1. Scans workspace for solved .c challenge files.
+  1. Scans workspace for solved .c challenge files (verifies content & sanity).
   2. Updates `250_C_QUESTIONS.md` (ticks [X] / unticks [ ]).
   3. Updates `Spaced_Repetition_Tracker.md` (registers newly solved challenges & updates status).
   4. Updates `README.md` (live stats dashboard, progress bar, topic table).
@@ -48,17 +48,37 @@ TOPIC_DIRS = [
     ("15", "15_Puzzles_Questions", "15. Puzzles Questions"),
 ]
 
+def is_valid_c_solution(filepath: Path) -> bool:
+    """
+    Sanity check to ensure file contains actual written code.
+    Requires:
+      - File size > 20 bytes
+      - Contains core C syntax (e.g. main, include, return, or braces)
+    """
+    try:
+        if filepath.stat().st_size < 20:
+            return False
+        content = filepath.read_text(encoding="utf-8", errors="ignore")
+        # Strip comments
+        clean = re.sub(r"/\*.*?\*/", "", content, flags=re.DOTALL)
+        clean = re.sub(r"//.*", "", clean)
+        # Check for code tokens
+        has_code = bool(re.search(r"\b(main|include|return|int|void|char|float|double|printf|scanf)\b", clean))
+        has_braces = "{" in clean and "}" in clean
+        return has_code and has_braces
+    except Exception:
+        return False
+
 def find_c_files():
-    """Find all existing .c files with content in topic directories."""
-    c_files = {}  # filename_lower -> (rel_path, section_name)
+    """Find all valid, written .c solution files in topic directories."""
+    c_files = {}  # filename_lower -> metadata
     for root, _, files in os.walk(WORKSPACE):
-        # Ignore .git or scratch directories
         if ".git" in root or "scratch" in root:
             continue
         for f in files:
             if f.endswith(".c"):
                 full_path = Path(root) / f
-                if full_path.stat().st_size > 0:
+                if is_valid_c_solution(full_path):
                     rel_path = full_path.relative_to(WORKSPACE)
                     parts = rel_path.parts
                     section_folder = parts[0] if len(parts) > 1 else "Root"
@@ -70,18 +90,16 @@ def find_c_files():
     return c_files
 
 def clean_problem_name(filename: str) -> str:
-    """Format a filename into a human-readable title."""
+    """Format a filename into a clean human-readable title."""
     name = filename
     if name.endswith(".c"):
         name = name[:-2]
-    # Replace underscores with spaces
     name = name.replace("_", " ")
-    # Clean up double spaces
     name = re.sub(r"\s+", " ", name).strip()
     return name
 
 def sync_250_questions(existing_c_files):
-    """Update checkbox marks in 250_C_QUESTIONS.md based on actual file presence."""
+    """Update checkbox marks in 250_C_QUESTIONS.md based on valid solution files."""
     questions_file = WORKSPACE / "250_C_QUESTIONS.md"
     if not questions_file.exists():
         return 0, 0, {}
@@ -141,7 +159,7 @@ def sync_readme(total_completed, total_questions, section_stats):
     pending = total_questions - total_completed
     bar = generate_progress_bar(percentage)
 
-    # Update Dashboard
+    # Update Dashboard metrics
     content = re.sub(r"\*\*Total Challenges\*\*\s*\|\s*`\d+`", f"**Total Challenges** | `{total_questions}`", content)
     content = re.sub(r"\*\*Completed\*\*\s*\|\s*`\d+`", f"**Completed** | `{total_completed}`", content)
     content = re.sub(r"\*\*Pending\*\*\s*\|\s*`\d+`", f"**Pending** | `{pending}`", content)
@@ -182,7 +200,6 @@ def sync_spaced_tracker(existing_c_files, section_stats):
     today = datetime.now().strftime("%Y-%m-%d")
     tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
 
-    # Read existing tracker content
     content = tracker_file.read_text(encoding="utf-8")
 
     # Parse existing rows in active schedule table
@@ -258,7 +275,6 @@ def sync_spaced_tracker(existing_c_files, section_stats):
 
     pending_table_str = "\n".join(pending_table_lines)
 
-    # Assemble updated content
     header = (
         "# 🧠 C 250+ Challenges: Spaced Repetition Tracker\n\n"
         "**Mastery Strategy:** Hermann Ebbinghaus Forgetfulness Curve 📉  \n"
@@ -300,7 +316,6 @@ def git_commit_and_push(custom_message=None, push=False, completed=0, total=0):
         print("Git working tree is clean. Nothing to commit.")
         return
 
-    # Check newly added/modified .c files for smart commit message
     changed_c_files = []
     for line in status.splitlines():
         fname = line[3:].strip()
@@ -327,10 +342,10 @@ def git_commit_and_push(custom_message=None, push=False, completed=0, total=0):
     subprocess.run(["git", "commit", "-m", commit_msg], cwd=WORKSPACE, check=True)
 
     if push:
-        print("Pushing to remote origin...")
+        print("Pushing to remote origin (GitHub)...")
         push_res = subprocess.run(["git", "push", "origin", "main"], cwd=WORKSPACE, capture_output=True, text=True)
         if push_res.returncode == 0:
-            print("Successfully pushed to GitHub!")
+            print("✅ Successfully pushed to GitHub!")
         else:
             print(f"⚠️ Git push output: {push_res.stderr or push_res.stdout}")
     else:
@@ -343,9 +358,9 @@ def main():
     parser.add_argument("-m", "--message", type=str, default=None, help="Custom Git commit message.")
     args = parser.parse_args()
 
-    print("Scanning workspace for C challenge files...")
+    print("Scanning workspace for C challenge solutions...")
     c_files = find_c_files()
-    print(f"Found {len(c_files)} completed .c solution(s).")
+    print(f"Found {len(c_files)} verified .c solution(s).")
 
     # Step 1: Sync 250_C_QUESTIONS.md
     completed, total, stats = sync_250_questions(c_files)
