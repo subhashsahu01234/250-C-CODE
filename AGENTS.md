@@ -39,6 +39,10 @@ When a challenge code file (e.g., `05_Array_Questions/Insert_an_element_in_an_ar
   - Update the visual text progress bar `[████...░░░░]`.
   - Update the specific topic row in the **Topic Breakdown Table** with the new `Solved / Total` count and status icon (`✅ Completed`, `⏳ In Progress`, `⭕ Not Started`).
 
+### 4. Dynamic Auto-Sync & Git Commit
+- Alternatively, run `python sync_progress.py` (or with `--push`) to automatically perform all markdown updates, recalculate progress, and commit changes with a descriptive message.
+
+
 ---
 
 ## 💻 C Code Quality Guidelines
