@@ -8,13 +8,13 @@ A curated, comprehensive roadmap of 250+ fundamental and advanced C programming 
 
 | Metric | Status |
 | :--- | :--- |
-| **Total Challenges** | `259` |
-| **Completed** | `66` |
-| **Pending** | `193` |
-| **Current Completion Rate** | `25.48%` |
+| **Total Challenges** | `234` |
+| **Completed** | `0` |
+| **Pending** | `234` |
+| **Current Completion Rate** | `0.00%` |
 
 ```text
-Progress: [██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 25.48% (66 / 259)
+Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0.00% (0 / 234)
 ```
 
 ---
@@ -31,10 +31,10 @@ Progress: [██████████░░░░░░░░░░░░░
 
 | # | Topic / Folder | Status | Solved / Total |
 | :-: | :--- | :-: | :-: |
-| 01 | [`01_Simple_C_Questions`](./01_Simple_C_Questions/) | ✅ Completed | 12 / 12 |
-| 02 | [`02_If_Else_Statement`](./02_If_Else_Statement/) | ✅ Completed | 28 / 28 |
-| 03 | [`03_Loops`](./03_Loops/) (`While_Loop`, `Do_While_Loop`, `For_Loop`) | ⏳ In Progress | 15 / 17 |
-| 04 | [`04_Switch_Case`](./04_Switch_Case/) | ⏳ In Progress | 11 / 17 |
+| 01 | [`01_Simple_C_Questions`](./01_Simple_C_Questions/) | ⭕ Not Started | 0 / 12 |
+| 02 | [`02_If_Else_Statement`](./02_If_Else_Statement/) | ⭕ Not Started | 0 / 28 |
+| 03 | [`03_Loops`](./03_Loops/) (`While_Loop`, `Do_While_Loop`, `For_Loop`) | ⭕ Not Started | 0 / 17 |
+| 04 | [`04_Switch_Case`](./04_Switch_Case/) | ⭕ Not Started | 0 / 12 |
 | 05 | [`05_Array_Questions`](./05_Array_Questions/) | ⭕ Not Started | 0 / 24 |
 | 06 | [`06_Matrix_Questions`](./06_Matrix_Questions/) | ⭕ Not Started | 0 / 18 |
 | 07 | [`07_String_Questions`](./07_String_Questions/) | ⭕ Not Started | 0 / 16 |
