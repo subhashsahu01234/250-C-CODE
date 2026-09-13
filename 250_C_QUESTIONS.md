@@ -3,11 +3,11 @@
 ## 1. Simple C Questions
 
 - [X] Area_and_Circumference_of_a_Circle.c
-- [ ] Area_of_Triangle.c
+- [x] Area_of_Triangle.c
 - [ ] Convert_a_Persons_Name_into_an_Abbreviated.c
-- [ ] Simple_Interest.c
+- [x] Simple_Interest.c
 - [ ] Gross_Salary_of_an_Employee.c
-- [ ] Percentage_of_5_Subjects.c
+- [x] Percentage_of_5_Subjects.c
 - [ ] Converting_Temperature_Celsius_into_Fahrenheit.c
 - [ ] The_Display_Size_of_the_Different_Data_Types.c
 - [ ] Factorial_of_a_Given_Number.c
@@ -17,30 +17,30 @@
 
 ## 2. If/Else Statement
 
-- [ ] The_Greatest_Number_Among_the_Given_Three_Numbers.c
-- [ ] The_Number_Is_Positive_or_Negative.c
-- [ ] Character_Is_Vowel_or_Consonant.c
+- [x] The_Greatest_Number_Among_the_Given_Three_Numbers.c
+- [x] The_Number_Is_Positive_or_Negative.c
+- [x] Character_Is_Vowel_or_Consonant.c
 - [ ] A_Character_Is_an_Alphabet_or_Not.c
 - [ ] Uppercase,_Lowercase,_Special_Character,_or_Digit.c
-- [ ] The_Number_Is_Positive_or_Negative.c
-- [ ] The_Number_Is_Even_or_Odd.c
-- [ ] Greatest_of_Two_Numbers.c
-- [ ] Greatest_Among_Three_Numbers.c
+- [x] The_Number_Is_Positive_or_Negative.c
+- [x] The_Number_Is_Even_or_Odd.c
+- [x] Greatest_of_Two_Numbers.c
+- [x] Greatest_Among_Three_Numbers.c
 - [ ] Leap_Year.c
 - [ ] The_Date_Is_Correct_or_Not.c
-- [ ] Voting_Eligibility_Checker.c
-- [ ] Find_the_maximum_between_two_numbers.c
-- [ ] Find_the_maximum_between_the_three_numbers.c
-- [ ] Check_whether_a_number_is_negative,_positive_or_zero.c
+- [x] Voting_Eligibility_Checker.c
+- [x] Find_the_maximum_between_two_numbers.c
+- [x] Find_the_maximum_between_the_three_numbers.c
+- [x] Check_whether_a_number_is_negative,_positive_or_zero.c
 - [ ] Check_whether_a_number_is_divisible_by_5_and_11_or_not.c
-- [ ] Find_whether_a_number_is_even_or_odd.c
+- [x] Find_whether_a_number_is_even_or_odd.c
 - [ ] Check_whether_a_year_is_a_leap_year_or_not.c
 - [ ] Check_whether_a_character_is_an_alphabet_or_not.c
-- [ ] Input_any_alphabet_and_check_whether_it_is_a_vowel_or_consonant.c
+- [x] Input_any_alphabet_and_check_whether_it_is_a_vowel_or_consonant.c
 - [ ] Input_any_character_and_check_whether_it_is_the_alphabet,_digit_or_special_character.c
 - [ ] Check_whether_a_character_is_an_uppercase_or_lowercase_alphabet.c
 - [ ] Count_the_total_number_of_notes_in_a_given_amount.c
-- [ ] Input_the_angles_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
+- [x] Input_the_angles_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
 - [ ] Input_all_sides_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
 - [ ] Check_whether_the_triangle_is_an_equilateral,_isosceles_or_scalene_triangle.c
 - [ ] Find_all_roots_of_a_quadratic_equation.c
