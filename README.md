@@ -9,12 +9,12 @@ A curated, comprehensive roadmap of 250+ fundamental and advanced C programming 
 | Metric | Status |
 | :--- | :--- |
 | **Total Challenges** | `234` |
-| **Completed** | `1` |
-| **Pending** | `233` |
-| **Current Completion Rate** | `0.43%` |
+| **Completed** | `21` |
+| **Pending** | `213` |
+| **Current Completion Rate** | `8.97%` |
 
 ```text
-Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0.43% (1 / 234)
+Progress: [████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 8.97% (21 / 234)
 ```
 
 ---
@@ -31,12 +31,12 @@ Progress: [░░░░░░░░░░░░░░░░░░░░░░░
 
 | # | Topic / Folder | Status | Solved / Total |
 | :-: | :--- | :-: | :-: |
-| 01 | [`01_Simple_C_Questions`](./01_Simple_C_Questions/) | ⏳ In Progress | 1 / 12 |
-| 02 | [`02_If_Else_Statement`](./02_If_Else_Statement/) | ⭕ Not Started | 0 / 28 |
-| 03 | [`03_Loops`](./03_Loops/) (`While_Loop`, `Do_While_Loop`, `For_Loop`) | ⭕ Not Started | 0 / 17 |
-| 04 | [`04_Switch_Case`](./04_Switch_Case/) | ⭕ Not Started | 0 / 12 |
+| 01 | [`01_Simple_C_Questions`](./01_Simple_C_Questions/) | ⏳ In Progress | 6 / 12 |
+| 02 | [`02_If_Else_Statement`](./02_If_Else_Statement/) | ⏳ In Progress | 12 / 28 |
+| 03 | [`03_Loops`](./03_Loops/) (`While_Loop`, `Do_While_Loop`, `For_Loop`) | ⏳ In Progress | 1 / 17 |
+| 04 | [`04_Switch_Case`](./04_Switch_Case/) | ⏳ In Progress | 1 / 12 |
 | 05 | [`05_Array_Questions`](./05_Array_Questions/) | ⭕ Not Started | 0 / 24 |
-| 06 | [`06_Matrix_Questions`](./06_Matrix_Questions/) | ⭕ Not Started | 0 / 18 |
+| 06 | [`06_Matrix_Questions`](./06_Matrix_Questions/) | ⏳ In Progress | 1 / 18 |
 | 07 | [`07_String_Questions`](./07_String_Questions/) | ⭕ Not Started | 0 / 16 |
 | 08 | [`08_String_Questions_Level_Up`](./08_String_Questions_Level_Up/) | ⭕ Not Started | 0 / 25 |
 | 09 | [`09_Function_Questions`](./09_Function_Questions/) | ⭕ Not Started | 0 / 32 |
@@ -45,7 +45,7 @@ Progress: [░░░░░░░░░░░░░░░░░░░░░░░
 | 12 | [`12_Sorting`](./12_Sorting/) | ⭕ Not Started | 0 / 7 |
 | 13 | [`13_Searching`](./13_Searching/) | ⭕ Not Started | 0 / 3 |
 | 14 | [`14_Tricky_Questions`](./14_Tricky_Questions/) | ⭕ Not Started | 0 / 2 |
-| 15 | [`15_Puzzles_Questions`](./15_Puzzles_Questions/) | ⭕ Not Started | 0 / 3 |
+| 15 | [`15_Puzzles_Questions`](./15_Puzzles_Questions/) | ⭕ Not Started | 0 / 1 |
 
 ---
 
@@ -65,9 +65,59 @@ clang -Wall -Wextra -std=c11 <filename>.c -o output.exe
 
 ---
 
+## 💻 C Code Quality Standards
+
+All solutions in this repository follow these guidelines (see [AGENTS.md](./AGENTS.md) for full details):
+
+| Guideline | Detail |
+| :--- | :--- |
+| **Standard** | Modern C (C99 / C11) |
+| **Main signature** | `int main(void)` or `int main(int argc, char *argv[])` with explicit `return 0;` |
+| **Input safety** | Check return values of `scanf`, `malloc`, `fopen`, etc. |
+| **Buffer safety** | Use `fgets` instead of unsafe `gets`; bounds-check arrays |
+| **Memory management** | Free all dynamically allocated memory (`free(ptr)`) |
+
+---
+
 ## 🧠 Spaced Repetition Workflow
 
+This project uses a **spaced repetition** system based on the Ebbinghaus forgetting curve to move solutions from short-term recall into long-term mastery.
+
+**Interval progression:** `1 Day` → `3 Days` → `7 Days` → `14 Days` → `30 Days` → `🎓 Mastered`
+
 1. **Solve** a problem in its topic directory.
-2. **Mark as done** in `250_C_QUESTIONS.md`.
-3. **Register** the review date in `Spaced_Repetition_Tracker.md`.
-4. Review on scheduled days to commit logic patterns to long-term memory.
+2. **Mark as done** `- [X]` in [`250_C_QUESTIONS.md`](./250_C_QUESTIONS.md).
+3. **Register** the review date in [`Spaced_Repetition_Tracker.md`](./Spaced_Repetition_Tracker.md).
+4. **Review** on scheduled days — if solved cleanly, advance the interval; if you struggle, reset to `1 Day`.
+
+---
+
+## ⚡ Automated Sync Script
+
+Run the sync script to keep all tracking documents in sync automatically:
+
+```bash
+# Sync progress locally (marks completed, updates stats)
+python sync_progress.py
+
+# Sync and push to GitHub
+python sync_progress.py --push
+```
+
+**What it does:**
+- Verifies `.c` files contain valid solution code
+- Marks completed problems `- [X]` in `250_C_QUESTIONS.md`
+- Registers new problems in `Spaced_Repetition_Tracker.md` (initial 1-day interval)
+- Updates the progress bar and topic breakdown in this README
+- Stages and commits with semantic messages (e.g., `feat(solution): solve <Problem> [21/234 - 8.97%]`)
+
+---
+
+## 🤖 AI Assistant Mode
+
+This repository is configured for **mentor-only** AI assistance (see [AGENTS.md](./AGENTS.md)):
+
+- ❌ The AI will **not** generate or solve challenge code autonomously
+- ✅ The AI **will** provide hints, pseudocode outlines, and edge-case guidance
+- ✅ The AI **will** review your code for bugs, logic errors, and memory leaks
+- ✅ The AI **will** update spaced repetition schedules after review sessions

@@ -11,7 +11,7 @@
 - [ ] Converting_Temperature_Celsius_into_Fahrenheit.c
 - [ ] The_Display_Size_of_the_Different_Data_Types.c
 - [ ] Factorial_of_a_Given_Number.c
-- [ ] Area_of_a_Circle.c
+- [x] Area_of_a_Circle.c
 - [ ] LCM_of_Two_Numbers.c
 - [ ] GCD_of_Two_Numbers.c
 
@@ -41,10 +41,10 @@
 - [ ] Check_whether_a_character_is_an_uppercase_or_lowercase_alphabet.c
 - [ ] Count_the_total_number_of_notes_in_a_given_amount.c
 - [x] Input_the_angles_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
-- [ ] Input_all_sides_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
-- [ ] Check_whether_the_triangle_is_an_equilateral,_isosceles_or_scalene_triangle.c
+- [x] Input_all_sides_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
+- [x] Check_whether_the_triangle_is_an_equilateral,_isosceles_or_scalene_triangle.c
 - [ ] Find_all_roots_of_a_quadratic_equation.c
-- [ ] Calculate_profit_or_loss.c
+- [x] Calculate_profit_or_loss.c
 
 ## 3. Loops
 
@@ -74,7 +74,7 @@
 
 ## 4. Switch Case
 
-- [ ] Temperature_Conversion_Celsius_To_Fahrenheit_And_Vice_Versa.c
+- [x] Temperature_Conversion_Celsius_To_Fahrenheit_And_Vice_Versa.c
 - [ ] Find_The_Day.c
 - [ ] Calculator.c
 - [ ] Find_A_Grade_Of_Given_Marks_or_(Find_a_Grade_of_Given_Marks_Using_Switch_Case).c
