@@ -3,55 +3,55 @@
 ## 1. Simple C Questions
 
 - [X] Area_and_Circumference_of_a_Circle.c
-- [x] Area_of_Triangle.c
+- [X] Area_of_Triangle.c
 - [ ] Convert_a_Persons_Name_into_an_Abbreviated.c
-- [x] Simple_Interest.c
+- [X] Simple_Interest.c
 - [ ] Gross_Salary_of_an_Employee.c
-- [x] Percentage_of_5_Subjects.c
+- [X] Percentage_of_5_Subjects.c
 - [ ] Converting_Temperature_Celsius_into_Fahrenheit.c
 - [ ] The_Display_Size_of_the_Different_Data_Types.c
-- [ ] Factorial_of_a_Given_Number.c
-- [x] Area_of_a_Circle.c
+- [X] Factorial_of_a_Given_Number.c
+- [X] Area_of_a_Circle.c
 - [ ] LCM_of_Two_Numbers.c
 - [ ] GCD_of_Two_Numbers.c
 
 ## 2. If/Else Statement
 
-- [x] The_Greatest_Number_Among_the_Given_Three_Numbers.c
-- [x] The_Number_Is_Positive_or_Negative.c
-- [x] Character_Is_Vowel_or_Consonant.c
+- [X] The_Greatest_Number_Among_the_Given_Three_Numbers.c
+- [X] The_Number_Is_Positive_or_Negative.c
+- [X] Character_Is_Vowel_or_Consonant.c
 - [ ] A_Character_Is_an_Alphabet_or_Not.c
 - [ ] Uppercase,_Lowercase,_Special_Character,_or_Digit.c
-- [x] The_Number_Is_Positive_or_Negative.c
-- [x] The_Number_Is_Even_or_Odd.c
-- [x] Greatest_of_Two_Numbers.c
-- [x] Greatest_Among_Three_Numbers.c
+- [X] The_Number_Is_Positive_or_Negative.c
+- [X] The_Number_Is_Even_or_Odd.c
+- [ ] Greatest_of_Two_Numbers.c
+- [ ] Greatest_Among_Three_Numbers.c
 - [ ] Leap_Year.c
 - [ ] The_Date_Is_Correct_or_Not.c
-- [x] Voting_Eligibility_Checker.c
-- [x] Find_the_maximum_between_two_numbers.c
-- [x] Find_the_maximum_between_the_three_numbers.c
-- [x] Check_whether_a_number_is_negative,_positive_or_zero.c
+- [X] Voting_Eligibility_Checker.c
+- [X] Find_the_maximum_between_two_numbers.c
+- [X] Find_the_maximum_between_the_three_numbers.c
+- [ ] Check_whether_a_number_is_negative,_positive_or_zero.c
 - [ ] Check_whether_a_number_is_divisible_by_5_and_11_or_not.c
-- [x] Find_whether_a_number_is_even_or_odd.c
+- [ ] Find_whether_a_number_is_even_or_odd.c
 - [ ] Check_whether_a_year_is_a_leap_year_or_not.c
 - [ ] Check_whether_a_character_is_an_alphabet_or_not.c
-- [x] Input_any_alphabet_and_check_whether_it_is_a_vowel_or_consonant.c
+- [ ] Input_any_alphabet_and_check_whether_it_is_a_vowel_or_consonant.c
 - [ ] Input_any_character_and_check_whether_it_is_the_alphabet,_digit_or_special_character.c
 - [ ] Check_whether_a_character_is_an_uppercase_or_lowercase_alphabet.c
 - [ ] Count_the_total_number_of_notes_in_a_given_amount.c
-- [x] Input_the_angles_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
-- [x] Input_all_sides_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
-- [x] Check_whether_the_triangle_is_an_equilateral,_isosceles_or_scalene_triangle.c
-- [ ] Find_all_roots_of_a_quadratic_equation.c
-- [x] Calculate_profit_or_loss.c
+- [X] Input_the_angles_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
+- [X] Input_all_sides_of_a_triangle_and_check_whether_the_triangle_is_valid_or_not.c
+- [ ] Check_whether_the_triangle_is_an_equilateral,_isosceles_or_scalene_triangle.c
+- [X] Find_all_roots_of_a_quadratic_equation.c
+- [X] Calculate_profit_or_loss.c
 
 ## 3. Loops
 
 ### 3.1 While Loop or While-Do Loop Questions
 
 - [ ] Reverse_A_given_Number.c
-- [ ] Find_Number_Is_Armstrong_Or_Not.c
+- [X] Find_Number_Is_Armstrong_Or_Not.c
 - [ ] Calculate_the_Sum_of_Natural_Numbers.c
 - [ ] Display_Fibonacci_Series.c
 - [ ] Find_the_LCM_of_two_Numbers.c
@@ -74,10 +74,10 @@
 
 ## 4. Switch Case
 
-- [x] Temperature_Conversion_Celsius_To_Fahrenheit_And_Vice_Versa.c
+- [X] Temperature_Conversion_Celsius_To_Fahrenheit_And_Vice_Versa.c
 - [ ] Find_The_Day.c
-- [ ] Calculator.c
-- [ ] Find_A_Grade_Of_Given_Marks_or_(Find_a_Grade_of_Given_Marks_Using_Switch_Case).c
+- [X] Calculator.c
+- [X] Find_A_Grade_Of_Given_Marks_or_(Find_a_Grade_of_Given_Marks_Using_Switch_Case).c
 - [ ] Find_the_Radius,_Circumference_and_Volume_of_the_Cylinder.c
 - [ ] Remove_All_Vowels_From_A_String.c
 - [ ] Check_whether_an_alphabet_is_a_vowel_or_consonant_using_a_switch_case.c
@@ -85,7 +85,7 @@
 - [ ] Check_whether_a_number_is_even_or_odd_using_a_switch_case.c
 - [ ] Check_whether_a_number_is_positive,_negative_or_zero_using_a_switch_case.c
 - [ ] Find_the_roots_of_a_quadratic_equation_using_a_switch_case.c
-- [ ] Create_a_Simple_Calculator_using_a_switch_case.c
+- [X] Create_a_Simple_Calculator_using_a_switch_case.c
 
 ## 5. Array Questions
 
@@ -116,7 +116,7 @@
 
 ## 6. Matrix Questions
 
-- [ ] Add_two_matrices.c
+- [X] Add_two_matrices.c
 - [ ] Subtract_two_matrices.c
 - [ ] Perform_scalar_matrix_multiplication.c
 - [ ] Multiply_two_matrices.c

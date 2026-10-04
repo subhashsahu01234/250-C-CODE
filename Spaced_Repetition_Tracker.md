@@ -18,6 +18,29 @@
 | Problem Name | Section | Last Reviewed | Next Review | Interval | Status / Notes |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | Area and Circumference of a Circle | 01_Simple_C_Questions | 2026-08-18 | 2026-08-19 | 1 Day | Initial solution completed |
+| Area of a Circle | 01_Simple_C_Questions | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Area of Triangle | 01_Simple_C_Questions | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Factorial of a Given Number | 01_Simple_C_Questions | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Percentage of 5 Subjects | 01_Simple_C_Questions | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Simple Interest | 01_Simple_C_Questions | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Calculate profit or loss | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Character Is Vowel or Consonant | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Check whether the triangle is an equilateral isosceles or scalene triangle | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Find all roots of a quadratic equation | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Find the maximum between the three numbers | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Find the maximum between two numbers | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Input all sides of a triangle and check whether the triangle is valid or not | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Input the angles of a triangle and check whether the triangle is valid or not | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| The Greatest Number Among the Given Three Numbers | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| The Number Is Even or Odd | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| The Number Is Positive or Negative | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Voting Eligibility Checker | 02_If_Else_Statement | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Find Number Is Armstrong Or Not | 03_Loops | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Calculator | 04_Switch_Case | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Create a Simple Calculator using a switch case | 04_Switch_Case | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Find A Grade Of Given Marks or (Find a Grade of Given Marks Using Switch Case) | 04_Switch_Case | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Temperature Conversion Celsius To Fahrenheit And Vice Versa | 04_Switch_Case | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
+| Add two matrices | 06_Matrix_Questions | 2026-10-04 | 2026-10-05 | 1 Day | Initial solution completed |
 
 ---
 
@@ -25,12 +48,12 @@
 
 | Topic / Section | Total Problems | Solved | Status |
 | :--- | :---: | :---: | :--- |
-| `01_Simple_C_Questions` | 12 | 1 | ⏳ In Progress |
-| `02_If_Else_Statement` | 28 | 0 | ⭕ Not Started |
-| `03_Loops` | 15 | 0 | ⭕ Not Started |
-| `04_Switch_Case` | 12 | 0 | ⭕ Not Started |
+| `01_Simple_C_Questions` | 12 | 6 | ⏳ In Progress |
+| `02_If_Else_Statement` | 28 | 12 | ⏳ In Progress |
+| `03_Loops` | 15 | 1 | ⏳ In Progress |
+| `04_Switch_Case` | 12 | 4 | ⏳ In Progress |
 | `05_Array_Questions` | 24 | 0 | ⭕ Not Started |
-| `06_Matrix_Questions` | 18 | 0 | ⭕ Not Started |
+| `06_Matrix_Questions` | 18 | 1 | ⏳ In Progress |
 | `07_String_Questions` | 16 | 0 | ⭕ Not Started |
 | `08_String_Questions_Level_Up` | 25 | 0 | ⭕ Not Started |
 | `09_Function_Questions` | 32 | 0 | ⭕ Not Started |
