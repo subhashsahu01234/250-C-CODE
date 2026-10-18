@@ -6,9 +6,9 @@
 - [X] Area_of_Triangle.c
 - [ ] Convert_a_Persons_Name_into_an_Abbreviated.c
 - [X] Simple_Interest.c
-- [ ] Gross_Salary_of_an_Employee.c
+- [x] Gross_Salary_of_an_Employee.c
 - [X] Percentage_of_5_Subjects.c
-- [ ] Converting_Temperature_Celsius_into_Fahrenheit.c
+- [x] Converting_Temperature_Celsius_into_Fahrenheit.c
 - [ ] The_Display_Size_of_the_Different_Data_Types.c
 - [X] Factorial_of_a_Given_Number.c
 - [X] Area_of_a_Circle.c
@@ -25,7 +25,7 @@
 - [X] The_Number_Is_Positive_or_Negative.c
 - [X] The_Number_Is_Even_or_Odd.c
 - [ ] Greatest_of_Two_Numbers.c
-- [ ] Greatest_Among_Three_Numbers.c
+- [ ] Greatesx_Among_Three_Numbers.c
 - [ ] Leap_Year.c
 - [ ] The_Date_Is_Correct_or_Not.c
 - [X] Voting_Eligibility_Checker.c
@@ -117,7 +117,7 @@
 ## 6. Matrix Questions
 
 - [X] Add_two_matrices.c
-- [ ] Subtract_two_matrices.c
+- [x] Subtract_two_matrices.c
 - [ ] Perform_scalar_matrix_multiplication.c
 - [ ] Multiply_two_matrices.c
 - [ ] Check_whether_the_two_matrices_are_equal_or_not.c
